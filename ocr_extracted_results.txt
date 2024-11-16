@@ -1,0 +1,80 @@
+图片: 1045043_mask.jpg
+OCR 识别文本:
+PurchaseOrderNo 6300096666 X000007074194CN X000007074008 Small BirdHat Remark AmerShanghai DC ItochuLogistics(China)COo.,LTD No.68Yangjiang Road FuqiaoTown,TaicangCityJiangsu China Madein China Color Velocity QtyTotal 76 Size NA Factory 171134 EAN 419419 ol623555 UPC m 23555141941（01)00623555419419(20)CN(30)76 C 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": "X000007074194CN",\n  "收件人姓名": null,\n  "地址": "No.68Yangjiang Road FuqiaoTown,TaicangCity,Jiangsu China",\n  "联系方式": null\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": "X000007074194CN",\n  "收件人姓名": null,\n  "地址": "No.68Yangjiang Road FuqiaoTown,TaicangCity,Jiangsu China",\n  "联系方式": null\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 230, 'prompt_tokens': 230, 'completion_tokens': 78, 'total_tokens': 308}} run=[RunInfo(run_id=UUID('304215af-8316-44bd-bdb7-78efe43cfbc1'))]
+
+==================================================
+
+图片: 1053038_mask.jpg
+OCR 识别文本:
+PurchaseOrderNo 6300094579 X00000605701 X000006057002 HELIAD15LBACKPACK Remark VN AmerSportsShanghai TradingLtd 3F,Building2,759YangGaoRoad(S) PudongNewDistrict,Shanghal China200127 Madein VIETNAM Color BLACK QtyTotal 35 Size ONESIZE Factory 152504 0686487724457 68648772445 7(01)00686487724457(20)VN(30)35 EAN UPC 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": "68648772445",\n  "收件人姓名": null,\n  "地址": "3F, Building 2, 759 Yang Gao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": "0686487724457"\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": "68648772445",\n  "收件人姓名": null,\n  "地址": "3F, Building 2, 759 Yang Gao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": "0686487724457"\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 242, 'prompt_tokens': 242, 'completion_tokens': 99, 'total_tokens': 341}} run=[RunInfo(run_id=UUID('2e96f7bf-ffbd-4146-8a86-dde5a7e1d32a'))]
+
+==================================================
+
+图片: 1061163_mask.jpg
+OCR 识别文本:
+Purchase Order No. 6300098008 L08106600-X000009031 X000009031002 SYLANPROW GO EUPHORIABLACK AmerShanghaiDC ItochuLogistics(China)CO.,LTD Madein CHINA Technical.Size 4 QtyTotal. 10 Cust.Size 230(1.5 Factory 225389 No.68YangjiangRoad Fugiao Town,TaicangCityJiangsuChina TEL:0512-33057619 Attn:DaisyHu Email:Daisy.Hu@amersports.com 06235551456186 6 2355545618 6 EAN UPC(01)00623555456186(20)CN(30)10 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": null,\n  "收件人姓名": "Daisy Hu",\n  "地址": "No.68 Yangjiang Road, Fugiao Town, Taicang City, Jiangsu, China",\n  "联系方式": "TEL:0512-33057619"\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": null,\n  "收件人姓名": "Daisy Hu",\n  "地址": "No.68 Yangjiang Road, Fugiao Town, Taicang City, Jiangsu, China",\n  "联系方式": "TEL:0512-33057619"\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 295, 'prompt_tokens': 295, 'completion_tokens': 84, 'total_tokens': 379}} run=[RunInfo(run_id=UUID('9651d1e5-96c8-4cdd-862e-6c5af6db5817'))]
+
+==================================================
+
+图片: 1068195_mask.jpg
+OCR 识别文本:
+Purchase Order No 6300094399 X000007725 162 X000007725017 VN BetaLightweightJacketM Remark Madein VietNam Color Chloris AmerSportsShanghaiTradingLtd 3F,Building2,759YangGaoRoad(S) PudongNewDistrict,Shanghai China200127 0623555 Qtytotal 22 Size L Factory 216991 EAN 421924 623555142192(01)00623555421924(20)VN(30)22 UPC
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "3F of Building 2, 759 Yang Gao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": "623555"\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "3F of Building 2, 759 Yang Gao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": "623555"\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 234, 'prompt_tokens': 234, 'completion_tokens': 81, 'total_tokens': 315}} run=[RunInfo(run_id=UUID('b3a99d2e-0f2f-4a73-a0c1-d64418004296'))]
+
+==================================================
+
+图片: 1076733_mask.jpg
+OCR 识别文本:
+PurchaseOrderNo 6300097633 X000006057194 X000006057017 HELIAD15LBACKPACK Remark VN Madein VIETNAM Color SOLITUDE AmerSportsShanghai TradingLtd 3FBuilding2,759YangGaoRoad(S) PudongNewDistrict,Shanghai China200127 QtyTotal. 35 Size ONESIZE Factory 152504 EAN 0623555438915 UPC 6 2355543891 5(01)00623555438915(20)VN(30)35 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "3FBuilding2,759YangGaoRoad(S),PudongNewDistrict,Shanghai,China,200127",\n  "联系方式": null\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "3FBuilding2,759YangGaoRoad(S),PudongNewDistrict,Shanghai,China,200127",\n  "联系方式": null\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 245, 'prompt_tokens': 245, 'completion_tokens': 77, 'total_tokens': 322}} run=[RunInfo(run_id=UUID('97cccb0f-32d0-48aa-990d-9d18dd33d8cc'))]
+
+==================================================
+
+图片: 1091765_mask.jpg
+OCR 识别文本:
+PurchaseOrderNo 5302666590 474425 24 L4744250024 GO Madein CHINA Technical,Size 5.5 XT-4OGAURORABOREALIS CANTEENTRANSPARENTYELLOW/DRIEDHERB Gtbbaf LogisticProperties(GLP) No.2andNo.5AmerWarehouse,68YangJiang RoadFuqiaoTown,TaicangCity.Jiangsu Province215434 Shawn.Wu@amersports.com Maggie.zhang@amersports.com +86-21-51165207 QtyTotal. 10 Cust.Size 245(2 Factory 225389 EAN Q195751539753 UPC 95751153975113 118201(01)0195751539753（20)G0（30)10
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "68 YangJiang Road Fuqiao Town Taicang City. Jiangsu Province 215434",\n  "联系方式": null\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "68 YangJiang Road Fuqiao Town Taicang City. Jiangsu Province 215434",\n  "联系方式": null\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 307, 'prompt_tokens': 307, 'completion_tokens': 65, 'total_tokens': 372}} run=[RunInfo(run_id=UUID('1e90ded9-7053-41d6-aed0-cba3ba7b4da0'))]
+
+==================================================
+
+图片: 1101104_mask.jpg
+OCR 识别文本:
+PurchaseOrderNo 6300098044 GO L07124400-X000006392 X000006392044 AERIOSFLGTXM BLACK/PILOT AmerShanghaiDC ItochuLogistics(China)CO.,LTD No.68YangjiangRoad Madein CHINA Technical.Size 8.5 QtyTotal. 10 Cust.Size 270(2.5) Factory 225389 Q686487409606 Fuqiao Town,TaicangCityJiangsuChina TEL：0512-33057619 Attn:DaisyHu Email:Daisy.Hu@amersports.com 68648740960 6 EAN UPC(01)00686487409606（20)CN（30)10 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": "68648740960",\n  "收件人姓名": null,\n  "地址": "No.68 Yangjiang Road, Madein CHINA Technical, Fuqiao Town, Taicang City, Jiangsu China",\n  "联系方式": "TEL：0512-33057619"\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": "68648740960",\n  "收件人姓名": null,\n  "地址": "No.68 Yangjiang Road, Madein CHINA Technical, Fuqiao Town, Taicang City, Jiangsu China",\n  "联系方式": "TEL：0512-33057619"\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 294, 'prompt_tokens': 294, 'completion_tokens': 98, 'total_tokens': 392}} run=[RunInfo(run_id=UUID('a64c7854-7481-4f80-9127-fc6c5502332d'))]
+
+==================================================
+
+图片: 1111806_mask.jpg
+OCR 识别文本:
+Purchase Order No 5302667411 474681 25 vo L4746810025 XT-6EXPANSESEASONAL Madein VIETNAM TechnicalSize 6 PlumKitten/Cement/Quail Itogisticsinao.te&ieigh 18FuaiRLuwnaicagCityJianuro FarCounerOnlyAmerSportsShanghai TradingLtd 3FBuilding29SouhngGaoRad PngNwDisticthhiChin20 QtyTotal. 10 Cust.Size 250(2） Factory 145464 0195751558426 EAN 15575115584216UPC 118201(01)0195751558426(20)V0(30)10
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": null,\n  "联系方式": null\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": null,\n  "联系方式": null\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 276, 'prompt_tokens': 276, 'completion_tokens': 40, 'total_tokens': 316}} run=[RunInfo(run_id=UUID('1e880806-7af5-45c8-b205-8179d7e125e1'))]
+
+==================================================
+
+图片: 1122381_mask.jpg
+OCR 识别文本:
+Purchase Order No 6300094579 X00000605701 X000006057002 HELIAD15LBACKPACK Remark VN AmerSports ShanghaiTradingLtd 3F,Building2,759YangGaoRoad(S) PudongNewDistrict,Shanghai China200127 Madein VIETNAM Color BLACK QtyTotal. 35 Size ONESIZE Factory 152504 0686487724457 68648772445(01)00686487724457(20)VN(30)35 EAN UPC 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": "68648772445",\n  "收件人姓名": null,\n  "地址": "3F, Building 2, No. 759 YangGao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": null\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": "68648772445",\n  "收件人姓名": null,\n  "地址": "3F, Building 2, No. 759 YangGao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": null\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 240, 'prompt_tokens': 240, 'completion_tokens': 87, 'total_tokens': 327}} run=[RunInfo(run_id=UUID('63016fa7-d7c7-4ac7-9742-ff5139884626'))]
+
+==================================================
+
+图片: 1131270_mask.jpg
+OCR 识别文本:
+PurchaseOrderNo 6300094573 X00000604401 X000006044002 MANTIS26BACKPACK Remark VN AmerSportsShanghaiTradingLtd. 3F,Building2,759YangGaoRoad(S) PudongNewDistrict,Shanghal China200127 Madein VIETNAM Color BLACK QtyTotal. 11 Size ONESIZE Factory 152504 EAN 0686487896420 uPc 68648789642(01)00686487896420(20)VN(30)11 0 118201
+提取的关键信息:
+generations=[[ChatGeneration(text='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "3F, Building 2, No.759 YangGao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": null\n}\n```', message=AIMessage(content='```json\n{\n  "快递单号": null,\n  "收件人姓名": null,\n  "地址": "3F, Building 2, No.759 YangGao Road(S), Pudong New District, Shanghai, China 200127",\n  "联系方式": null\n}\n```'))]] llm_output={'token_usage': {'question_tokens': 245, 'prompt_tokens': 245, 'completion_tokens': 75, 'total_tokens': 320}} run=[RunInfo(run_id=UUID('12229c9c-649c-4908-8e9f-0468d9d77726'))]
+
+==================================================
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR 结果</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/background.jpg'); /* 使用你自己的图片路径 */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e6b800;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            background-color: #444;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            width: 0%;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            transition: width 0.4s ease;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #333;
+        }
+
+        table th, table td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+            color: #fff;
+        }
+
+        table th {
+            background-color: #444;
+            color: #ffcc00;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #555;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin: 20px auto;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #ccc;
+            font-size: 14px;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>上传快递面单图片进行 OCR 处理</h1>
+
+        <!-- 文件上传表单 -->
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="images" accept="image/*" multiple>
+            <input type="submit" value="开始 OCR 处理">
+        </form>
+
+
+        {% if results %}
+        <h2>处理结果：</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>图片名称</th>
+                    <th>快递单号</th>
+                    <th>收件人姓名</th>
+                    <th>地址</th>
+                    <th>联系方式</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result.image_name }}</td>
+                    <td>{{ result['快递单号'] }}</td>
+                    <td>{{ result['收件人姓名'] }}</td>
+                    <td>{{ result['地址'] }}</td>
+                    <td>{{ result['联系方式'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% if download_link %}
+        <h2>下载结果文件</h2>
+        <a class="download-button" href="{{ download_link }}" download>点击下载 CSV 文件</a>
+        {% endif %}
+    </div>
+
+    <div class="footer">
+        <p>© 2024 OCR 工具. 版权所有.</p>
+    </div>
+</body>
+</html>

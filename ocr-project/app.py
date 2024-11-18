@@ -5,7 +5,6 @@ from werkzeug.utils import secure_filename
 from services.ocr_utils import ocr_recognition, extract_delivery_info, parse_extracted_info
 from services.output_handler import save_results_to_csv
 
-
 app = Flask(__name__)
 app.secret_key = '123456'  # 用于闪现消息的密钥
 
@@ -48,7 +47,7 @@ def process_image_multiprocessing(args):
         # 提取信息
         extracted_info = extract_delivery_info(ocr_text)
         if extracted_info:
-            print(f"提取到的原始信息: {extracted_info}")
+            # print(f"提取到的原始信息: {extracted_info}")
             # 解析提取的信息
             parsed_data = parse_extracted_info(extracted_info)
 
@@ -98,7 +97,7 @@ def home():
 @app.route('/download/<filename>')
 def download_file(filename):
     # 调试打印实际路径
-    print(f"尝试下载文件: {os.path.join(OUTPUT_FOLDER, filename)}")
+    # print(f"尝试下载文件: {os.path.join(OUTPUT_FOLDER, filename)}")
     
     # 确保文件存在后下载
     if os.path.exists(os.path.join(OUTPUT_FOLDER, filename)):

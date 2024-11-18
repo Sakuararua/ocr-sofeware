@@ -1,7 +1,9 @@
 import base64
 import requests
+
 from sparkai.llm.llm import ChatSparkLLM
 from sparkai.core.messages import ChatMessage
+
 
 # 配置信息
 SPARKAI_URL = 'wss://spark-api.xf-yun.com/v4.0/chat'
@@ -52,7 +54,7 @@ def ocr_recognition(image_path):
 def extract_delivery_info(ocr_text):
     messages = [ChatMessage(
         role="user",
-        content=f"请从以下文本中提取快递单号、收件人姓名、地址和联系方式，并以key:value的形式返回,注意快递单号不是订单号，通常在XX快递后面，联系方式可以是电话或者email,如果没有找到相关的值，则填充为null,这是我需要你处理的文本：\n\n{ocr_text}"
+        content=f"请从以下文本中提取快递单号、收件人姓名、地址和联系方式，并以key:value的形式返回,注意快递单号不是订单号，是运单号通常在XX快递后面，联系人姓名可能会在地址后面，注意使用姓氏区分划分，联系方式可以是电话或者email,如果没有找到相关的值，则填充为null,在提取的时候只要收取方的信息，这是我需要你处理的文本：\n\n{ocr_text}"
     )]
     try:
         response = spark.generate([messages])
